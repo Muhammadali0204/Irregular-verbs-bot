@@ -114,7 +114,7 @@ async def testdaa(msg : Message, state : FSMContext):
     tests = data['data']
     tartib = data['tartib']
     tur = data['tur']
-    javob = msg.text
+    javob = msg.text.lower()
     
     if tur == 'simple':
         if tests[tartib]['past_simple'] == javob:
